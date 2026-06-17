@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAMIN VAI - Your Trusted Shop</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <h2 class="loader-text">YAMIN VAI</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">YAMIN</span><span class="logo-highlight">VAI</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Welcome to</span>
+                <span class="title-main">
+                    <span class="letter" style="--i:1">Y</span>
+                    <span class="letter" style="--i:2">A</span>
+                    <span class="letter" style="--i:3">M</span>
+                    <span class="letter" style="--i:4">I</span>
+                    <span class="letter" style="--i:5">N</span>
+                    <span class="letter space" style="--i:6">&nbsp;</span>
+                    <span class="letter" style="--i:7">V</span>
+                    <span class="letter" style="--i:8">A</span>
+                    <span class="letter" style="--i:9">I</span>
+                </span>
+            </h1>
+            <p class="hero-tagline">Your Trusted Shop for Everything You Need</p>
+            <a href="#products" class="btn btn-primary hero-btn">
+                <span>Shop Now</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-wrapper fade-in-left">
+                    <div class="profile-ring">
+                        <div class="profile-image">
+                            <!-- REPLACE: Change 'profile.jpg' to your actual profile image -->
+                            <img src="profile.jpg" alt="YAMIN PRINCE" onerror="this.src='https://via.placeholder.com/300x300/667eea/ffffff?text=YP'">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text fade-in-right">
+                    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                    <!-- REPLACE: Update name if needed -->
+                    <h3 class="about-name">YAMIN PRINCE</h3>
+                    <!-- REPLACE: Update bio text as needed -->
+                    <p class="about-bio">
+                        Your one-stop destination for quality, comfort, and style. Bringing you the best products with a touch of care. Shop with us today!
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <!-- REPLACE: Update location -->
+                            <span>BARISHALL / BHOLA / BORHANUDDIN</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <!-- REPLACE: Update phone number -->
+                            <span>01777829844</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <!-- REPLACE: Update email -->
+                            <span>yaminprnc@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Our <span class="highlight">Products</span></h2>
+            <p class="section-subtitle fade-in-up">Discover our amazing collection</p>
+            
+            <!-- Category Filters -->
+            <div class="filter-buttons fade-in-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="home">Home</button>
+                <button class="filter-btn" data-filter="others">Others</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card fade-in-up" data-category="electronics">
+                    <div class="product-image">
+                        <!-- REPLACE: Change image path to your product image -->
+                        <img src="images/product1.jpg" alt="Wireless Earbuds" onerror="this.src='https://via.placeholder.com/300x300/667eea/ffffff?text=Product+1'">
+                        <div class="product-overlay">
+                            <span class="product-tag">New</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <!-- REPLACE: Update product details -->
+                        <h3 class="product-name">Wireless Earbuds</h3>
+                        <p class="product-desc">High-quality sound with noise cancellation</p>
+                        <div class="product-price">৳ 1,500</div>
+                        <button class="btn btn-order" onclick="orderProduct('Wireless Earbuds')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card fade-in-up" data-category="fashion">
+                    <div class="product-image">
+                        <img src="images/product2.jpg" alt="Stylish T-Shirt" onerror="this.src='https://via.placeholder.com/300x300/f093fb/ffffff?text=Product+2'">
+                        <div class="product-overlay">
+                            <span class="product-tag">Popular</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Stylish T-Shirt</h3>
+                        <p class="product-desc">Premium cotton, comfortable fit</p>
+                        <div class="product-price">৳ 450</div>
+                        <button class="btn btn-order" onclick="orderProduct('Stylish T-Shirt')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card fade-in-up" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/product3.jpg" alt="Smart Watch" onerror="this.src='https://via.placeholder.com/300x300/4facfe/ffffff?text=Product+3'">
+                        <div class="product-overlay">
+                            <span class="product-tag">Hot</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Smart Watch</h3>
+                        <p class="product-desc">Track fitness, calls & notifications</p>
+                        <div class="product-price">৳ 2,200</div>
+                        <button class="btn btn-order" onclick="orderProduct('Smart Watch')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card fade-in-up" data-category="home">
+                    <div class="product-image">
+                        <img src="images/product4.jpg" alt="LED Desk Lamp" onerror="this.src='https://via.placeholder.com/300x300/43e97b/ffffff?text=Product+4'">
+                        <div class="product-overlay">
+                            <span class="product-tag">Sale</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">LED Desk Lamp</h3>
+                        <p class="product-desc">Adjustable brightness, eye-friendly</p>
+                        <div class="product-price">৳ 850</div>
+                        <button class="btn btn-order" onclick="orderProduct('LED Desk Lamp')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card fade-in-up" data-category="fashion">
+                    <div class="product-image">
+                        <img src="images/product5.jpg" alt="Trendy Sneakers" onerror="this.src='https://via.placeholder.com/300x300/fa709a/ffffff?text=Product+5'">
+                        <div class="product-overlay">
+                            <span class="product-tag">Trending</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Trendy Sneakers</h3>
+                        <p class="product-desc">Lightweight & stylish for everyday</p>
+                        <div class="product-price">৳ 1,800</div>
+                        <button class="btn btn-order" onclick="orderProduct('Trendy Sneakers')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card fade-in-up" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/product6.jpg" alt="Bluetooth Speaker" onerror="this.src='https://via.placeholder.com/300x300/a8edea/333333?text=Product+6'">
+                        <div class="product-overlay">
+                            <span class="product-tag">Best</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bluetooth Speaker</h3>
+                        <p class="product-desc">Powerful bass, 12hr battery life</p>
+                        <div class="product-price">৳ 1,200</div>
+                        <button class="btn btn-order" onclick="orderProduct('Bluetooth Speaker')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card fade-in-up" data-category="home">
+                    <div class="product-image">
+                        <img src="images/product7.jpg" alt="Decorative Cushion" onerror="this.src='https://via.placeholder.com/300x300/ffecd2/333333?text=Product+7'">
+                        <div class="product-overlay">
+                            <span class="product-tag">Cozy</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Decorative Cushion</h3>
+                        <p class="product-desc">Soft & elegant home decor</p>
+                        <div class="product-price">৳ 350</div>
+                        <button class="btn btn-order" onclick="orderProduct('Decorative Cushion')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card fade-in-up" data-category="others">
+                    <div class="product-image">
+                        <img src="images/product8.jpg" alt="Travel Backpack" onerror="this.src='https://via.placeholder.com/300x300/d299c2/ffffff?text=Product+8'">
+                        <div class="product-overlay">
+                            <span class="product-tag">Durable</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Travel Backpack</h3>
+                        <p class="product-desc">Spacious, waterproof & stylish</p>
+                        <div class="product-price">৳ 950</div>
+                        <button class="btn btn-order" onclick="orderProduct('Travel Backpack')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in-up">How to <span class="highlight">Order</span></h2>
+            <p class="section-subtitle fade-in-up">Call us directly to place your order!</p>
+            
+            <div class="contact-content">
+                <div class="contact-card fade-in-up">
+                    <div class="phone-icon-wrapper">
+                        <div class="phone-ring"></div>
+                        <div class="phone-ring ring-2"></div>
+                        <div class="phone-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Call Now to Order</h3>
+                    <!-- REPLACE: Update phone number -->
+                    <a href="tel:+8801777829844" class="call-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>01777829844</span>
+                    </a>
+                    <p class="call-note">Tap to call on mobile devices</p>
+                </div>
+
+                <div class="contact-alternatives fade-in-up">
+                    <h4>Other Ways to Reach Us</h4>
+                    <div class="contact-methods">
+                        <a href="tel:+8801777829844" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>01777829844</span>
+                        </a>
+                        <!-- REPLACE: Update Facebook URL -->
+                        <a href="https://www.facebook.com/prince.yamin.188" target="_blank" class="contact-method">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <!-- REPLACE: Update email -->
+                        <a href="mailto:yaminprnc@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>yaminprnc@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C150,100 350,0 500,50 C650,100 800,0 1000,50 C1200,100 1350,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">YAMIN <span>VAI</span></h3>
+                    <p>Your Trusted Shop for Everything You Need</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <!-- REPLACE: Update social media links -->
+                        <a href="https://www.facebook.com/prince.yamin.188" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 YAMIN VAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <h3>Order <span id="modalProductName"></span></h3>
+            <p>To order this product, please call us directly:</p>
+            <!-- REPLACE: Update phone number -->
+            <a href="tel:+8801777829844" class="call-btn modal-call-btn">
+                <i class="fas fa-phone"></i>
+                <span>01777829844</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
